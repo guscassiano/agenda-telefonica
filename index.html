@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda telefônica</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agenda telefônica</h1>
+            <img src="./Images/agenda.JPG" alt="Agenda com um telefone na capa">
+        </header>
+        <form id="form-id">
+            <input id="nome-contato" type="text" required placeholder="Entre com o contato">
+            <input id="numero-telefone" type="number" required min="00900000000" max="99999999999" placeholder="(XX)XXXXX-XXXX">
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Remover</button>
+        </form>
+        <table cellspacing = 0>
+            <thead>
+                <tr>
+                    <th>Nome do contato</th>
+                    <th>Número</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>---</td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
